@@ -1,11 +1,11 @@
 <!doctype html>
-<html lang="en">
+<html lang="fr">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="color-scheme" content="light">
-    <meta name="description" content="How CALIXO approaches local data, optional AI features and user choice.">
-    <title>CALIXO Privacy Policy</title>
+    <meta name="description" content="Politique de confidentialité de CALIXO VAULT 1.0 : données locales, achats Apple, sauvegardes et contrôle utilisateur.">
+    <title>Confidentialité — CALIXO VAULT</title>
     <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23172d46'/%3E%3Cpath d='M43 20a18 18 0 1 0 0 24' fill='none' stroke='%23ffffff' stroke-width='7' stroke-linecap='round'/%3E%3C/svg%3E">
     <style>
       :root { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; color: #172d46; background: #f7f9fc; }
@@ -24,42 +24,104 @@
       nav { display: flex; flex-wrap: wrap; gap: .5rem 1.5rem; }
       a { color: #174f8a; text-underline-offset: .2em; overflow-wrap: anywhere; }
       a:focus-visible { outline: 3px solid #174f8a; outline-offset: 4px; border-radius: 2px; }
+      .language-nav { margin: 1.5rem 0 2rem; }
+      .language-section { border-top: 2px solid #172d46; margin-top: 3.5rem; padding-top: 2rem; }
     </style>
   </head>
   <body>
     <main>
-      <h1>CALIXO Privacy Policy</h1>
-      <p class="updated">Last updated: 23 September 2026</p>
-      <section aria-labelledby="local-data">
-        <h2 id="local-data">Local application data</h2>
-        <p>CALIXO applications are designed around local-first processing. In CALIXO VAULT, personal financial records and documents are intended to be stored and processed on your device unless you explicitly use a feature that requires an external service. This does not mean that every present or future feature operates only on-device.</p>
-      </section>
-      <section aria-labelledby="optional-ai">
-        <h2 id="optional-ai">Optional AI features</h2>
-        <p>Some optional CALIXO Plus features may use an external AI provider. For the planned CALIXO VAULT Plus Analysis feature, CALIXO calculates financial figures before AI processing and intends to transmit only minimized financial aggregates needed to explain the requested analysis.</p>
-        <p>This Analysis path is designed to exclude original documents, document images and PDFs, OCR content, bank credentials and account numbers, individual bank transactions, names, postal addresses and free-form personal notes.</p>
-        <p>AI-generated text is treated as an explanatory proposal. CALIXO validates outputs before display; rejected responses can fall back to local deterministic analysis. This feature is not currently active for real users. AI functionality may be activated only when applicable privacy and operational controls are ready.</p>
-      </section>
-      <section aria-labelledby="providers">
-        <h2 id="providers">Service providers and data minimization</h2>
-        <p>Optional online functionality may rely on third-party infrastructure providers. Provider processing may be subject to their applicable terms and privacy and security controls. CALIXO aims to transmit only the information needed for an online feature you request.</p>
-      </section>
-      <section aria-labelledby="choice">
-        <h2 id="choice">Your choice</h2>
-        <p>Optional AI functionality is intended to require your choice or consent before use. Where applicable, you can continue using local functionality without choosing an optional online AI feature.</p>
-      </section>
-      <section aria-labelledby="younger-users">
-        <h2 id="younger-users">Younger users</h2>
-        <p>Some CALIXO applications may be suitable for younger users depending on the specific product and feature. Features involving financial guidance or online AI processing may be subject to additional safeguards, age restrictions or consent requirements before public availability.</p>
-      </section>
-      <section aria-labelledby="contact">
-        <h2 id="contact">Contact</h2>
-        <p>For privacy questions, email <a href="mailto:cemil.studioapps@gmail.com">cemil.studioapps@gmail.com</a>.</p>
-      </section>
+      <h1>Politique de confidentialité de CALIXO VAULT</h1>
+      <p class="updated">Version 1.0 · Entrée en vigueur : 2 octobre 2026 · Dernière mise à jour : 2 octobre 2026</p>
+      <p>Cette politique décrit la version 1.0 de CALIXO VAULT préparée pour distribution. Elle distingue les données conservées dans l’application des échanges avec Apple et des fichiers que vous choisissez de partager ou d’exporter.</p>
+      <nav class="language-nav" aria-label="Langue de la politique">
+        <a href="#francais" lang="fr">Français</a>
+        <a href="#english" lang="en">English</a>
+      </nav>
+      <div id="francais" lang="fr">
+        <section aria-labelledby="fr-local">
+          <h2 id="fr-local">Données traitées sur votre appareil</h2>
+          <p>VAULT conserve localement les documents que vous ajoutez, leurs originaux et métadonnées, ainsi que les dépenses, revenus, budgets, garanties, abonnements, réserves et objectifs que vous saisissez. Le texte reconnu par OCR est traité sur votre appareil. La version actuelle n’envoie pas automatiquement vos documents originaux, leurs images, leur texte OCR ou vos données financières à un serveur CALIXO.</p>
+        </section>
+        <section aria-labelledby="fr-documents">
+          <h2 id="fr-documents">Scanner et importer</h2>
+          <p>La caméra sert à numériser un document lorsque vous choisissez Scanner. Vous pouvez aussi sélectionner un fichier dans Fichiers ou envoyer un document vers VAULT depuis la feuille de partage iOS. La Share Extension copie alors le fichier vers l’espace local partagé de l’application. Les originaux sont conservés localement et l’OCR de cette version s’exécute sur l’appareil. Vous choisissez les documents à ajouter et vérifiez les informations proposées avant de confirmer leur enregistrement ; une suggestion n’est pas une donnée officielle tant que vous ne l’avez pas validée.</p>
+        </section>
+        <section aria-labelledby="fr-purchases">
+          <h2 id="fr-purchases">Essai et achat Standard</h2>
+          <p>VAULT local propose un essai Standard de 14 jours que vous démarrez volontairement, sans débit automatique à son terme, et un achat unique pour l’accès permanent. Apple gère ces opérations via StoreKit. L’application reçoit d’Apple les informations de transaction nécessaires à la vérification du droit d’accès et peut conserver localement un état technique de ce droit. CALIXO ne reçoit pas votre numéro de carte ni vos données de paiement complètes. La restauration des achats interroge Apple lorsque vous la demandez.</p>
+        </section>
+        <section aria-labelledby="fr-export">
+          <h2 id="fr-export">Sauvegarde, restauration et partage</h2>
+          <p>Une sauvegarde ou un export est lancé par vous. Le fichier peut contenir vos documents et données financières et est envoyé vers la destination que vous choisissez, par exemple Fichiers ou un service de stockage que vous utilisez. Après l’export, la conservation et la protection de cette copie dépendent de cette destination, hors du contrôle de CALIXO : protégez le fichier partagé. Une restauration est également initiée par vous. Ces opérations sont distinctes du stockage interne de VAULT et des éventuelles sauvegardes du système iOS.</p>
+        </section>
+        <section aria-labelledby="fr-security">
+          <h2 id="fr-security">Sécurité locale et Face ID</h2>
+          <p>VAULT s’appuie sur les mécanismes de protection des fichiers et du trousseau d’iOS. Si vous utilisez Face ID pour verrouiller le coffre, la vérification biométrique est effectuée par les API système d’Apple : VAULT reçoit un résultat d’authentification, pas vos données biométriques.</p>
+        </section>
+        <section aria-labelledby="fr-not-collected">
+          <h2 id="fr-not-collected">Ce que cette version ne collecte pas</h2>
+          <p>La version actuelle n’intègre ni publicité, ni SDK publicitaire, ni suivi publicitaire, ni outil d’analyse tiers. Elle ne demande pas l’accès à vos contacts ou à votre localisation et ne revend pas vos données. Ces constats concernent cette version ; les échanges StoreKit avec Apple et les exports que vous déclenchez sont décrits séparément ci-dessus.</p>
+          <p>Les fonctions d’analyse IA distante ne sont pas activées dans cette version. Si elles sont proposées ultérieurement, cette politique sera mise à jour avant leur activation. Aucun fournisseur d’IA futur n’est annoncé comme actif ici.</p>
+        </section>
+        <section aria-labelledby="fr-delete">
+          <h2 id="fr-delete">Vos choix et la suppression</h2>
+          <p>Vous décidez des documents ajoutés, des informations confirmées et des exports. Vous pouvez supprimer des éléments dans l’application et utiliser son effacement du coffre local. La désinstallation retire normalement les données du conteneur de l’application, mais certains éléments techniques du trousseau iOS peuvent subsister selon le fonctionnement du système ; les droits d’achat sont aussi conservés par Apple et peuvent être restaurés. L’effacement de VAULT ne supprime pas les copies déjà exportées ni les données gérées par Apple ou par la destination choisie.</p>
+        </section>
+        <section aria-labelledby="fr-age">
+          <h2 id="fr-age">Âge</h2>
+          <p>Cette version de VAULT n’applique pas de restriction générale « 18 ans ou plus ». Elle ne comprend pas les futures fonctions Plus qui pourraient avoir des conditions distinctes.</p>
+        </section>
+        <section aria-labelledby="fr-contact">
+          <h2 id="fr-contact">Contact</h2>
+          <p>Pour une question de confidentialité, d’assistance ou une demande d’information, écrivez à <a href="mailto:cemil.studioapps@gmail.com">cemil.studioapps@gmail.com</a>. N’envoyez pas de document financier, de mot de passe ou de donnée de paiement par email.</p>
+        </section>
+      </div>
+      <div id="english" class="language-section" lang="en">
+        <h2>CALIXO VAULT Privacy Policy</h2>
+        <p class="updated">Version 1.0 · Effective: 2 October 2026 · Last updated: 2 October 2026</p>
+        <p>This policy describes CALIXO VAULT version 1.0 as prepared for distribution. It distinguishes data kept in the app from exchanges with Apple and files you choose to share or export.</p>
+        <section aria-labelledby="en-local">
+          <h2 id="en-local">Data processed on your device</h2>
+          <p>VAULT stores locally the documents you add, their originals and metadata, and the expenses, income, budgets, warranties, subscriptions, reserves and goals you enter. OCR-recognized text is processed on your device. The current version does not automatically send original documents, their images, OCR text or financial data to a CALIXO server.</p>
+        </section>
+        <section aria-labelledby="en-documents">
+          <h2 id="en-documents">Scanning and importing</h2>
+          <p>The camera scans a document when you choose Scan. You can also select a file in Files or send a document to VAULT from the iOS share sheet. The Share Extension then copies it into the app’s local shared space. Originals remain local and OCR in this version runs on the device. You choose which documents to add and review proposed information before confirming a save; a suggestion is not an official record until you confirm it.</p>
+        </section>
+        <section aria-labelledby="en-purchases">
+          <h2 id="en-purchases">Standard trial and purchase</h2>
+          <p>VAULT local offers a 14-day Standard trial that you start voluntarily, with no automatic charge at its end, and a one-time purchase for permanent access. Apple handles these operations through StoreKit. The app receives from Apple the transaction information needed to verify access and may keep a local technical record of that entitlement. CALIXO does not receive your card number or full payment details. Restore Purchases contacts Apple when you request it.</p>
+        </section>
+        <section aria-labelledby="en-export">
+          <h2 id="en-export">Backup, restore and sharing</h2>
+          <p>You initiate a backup or export. The file can include your documents and financial data and is sent to the destination you choose, such as Files or a storage service you use. After export, retention and protection of that copy depend on the destination, outside CALIXO’s control: protect the shared file. You also initiate restores. These actions are separate from VAULT’s internal storage and any iOS system backups.</p>
+        </section>
+        <section aria-labelledby="en-security">
+          <h2 id="en-security">Local security and Face ID</h2>
+          <p>VAULT relies on iOS file protection and Keychain mechanisms. If you use Face ID to lock the vault, Apple’s system APIs perform biometric verification: VAULT receives an authentication result, not your biometric data.</p>
+        </section>
+        <section aria-labelledby="en-not-collected">
+          <h2 id="en-not-collected">What this version does not collect</h2>
+          <p>The current version includes no advertising, advertising SDK, ad tracking or third-party analytics tool. It does not request access to contacts or location and does not sell your data. These statements apply to this version; StoreKit exchanges with Apple and exports you initiate are described separately above.</p>
+          <p>Remote AI analysis features are not enabled in this version. If offered later, this policy will be updated before activation. No future AI provider is represented here as active.</p>
+        </section>
+        <section aria-labelledby="en-delete">
+          <h2 id="en-delete">Your choices and deletion</h2>
+          <p>You decide which documents to add, which information to confirm and when to export. You can delete items in the app and use its local vault erase feature. Uninstalling normally removes data in the app container, but some technical Keychain items may remain depending on iOS behavior; Apple also retains purchase entitlements, which can be restored. Erasing VAULT does not remove copies already exported or data managed by Apple or your chosen destination.</p>
+        </section>
+        <section aria-labelledby="en-age">
+          <h2 id="en-age">Age</h2>
+          <p>This version of VAULT has no general “18 or older” restriction. It does not include future Plus features that may have separate conditions.</p>
+        </section>
+        <section aria-labelledby="en-contact">
+          <h2 id="en-contact">Contact</h2>
+          <p>For privacy, support or information requests, email <a href="mailto:cemil.studioapps@gmail.com">cemil.studioapps@gmail.com</a>. Do not email financial documents, passwords or payment details.</p>
+        </section>
+      </div>
       <footer>
-        <nav aria-label="Site navigation">
-          <a href="./">Home</a>
-          <a href="privacy.html" aria-current="page">Privacy Policy</a>
+        <nav aria-label="Navigation du site / Site navigation">
+          <a href="./">Accueil / Home</a>
+          <a href="privacy.html" aria-current="page">Confidentialité / Privacy</a>
           <a href="support.html">Support</a>
         </nav>
       </footer>
